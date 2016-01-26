@@ -1,0 +1,33 @@
+{
+  "name": "my-site",
+  "authors": [
+    "Yathi <bm.thunderemperor@gmail.com>"
+  ],
+  "description": "My website showing off my work and portfolio",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "yathi",
+    "yathirajan",
+    "manavalan",
+    "developer",
+    "web-dev",
+    "designer",
+    "machine",
+    "learning",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0"
+  }
+}
