@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="emcApp">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head 
          content must come *after* these tags -->
-	<title>Yathi</title>
+	<title>Edmonton Movie Club</title>
 	<!-- Bootstrap -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/mystyles.css" rel="stylesheet">
+    <!-- build:css styles/main.css -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/mystyles.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,7 +96,7 @@
             <div class="row row-header">
                 <div class="col-xs-12"> 
                   <div class="row">
-                      <img src="img/banner.jpg" class="img-responsive">
+                      <img src="../img/banner.jpg" class="img-responsive">
                   </div>
                 </div>
             </div> <!-- end row-header -->
@@ -104,11 +106,11 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="row">
-                    <img src="img/top.png" class="img-responsive">
+                    <img src="../img/top.png" class="img-responsive">
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" ng-controller="MovieController">
             <div class="col-xs-10 col-xs-offset-1">
                 <nav class="navbar navbar-default">
                         <ul class="nav navbar-nav">
@@ -128,34 +130,9 @@
             <div class="col-xs-1"></div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-xs-6 panel panel-default">
-                <h3 align="center">Katyar</h3>
-                <img class="img-responsive img-rounded" src="img/movie/katyar.png">
-                <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
-            </div>
-            <div class="col-sm-4 col-xs-6 panel panel-default">
-                <h3 align="center">Katyar</h3>
-                <img class="img-responsive img-rounded" src="img/movie/katyar.png">
-                <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
-            </div>
-            <div class="col-sm-4 col-xs-6 panel panel-default">
-                <h3 align="center">Katyar</h3>
-                <img class="img-responsive img-rounded" src="img/movie/katyar.png">
-                <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
-            </div>
-            <div class="col-sm-4 col-xs-6 panel panel-default">
-                <h3 align="center">Katyar</h3>
-                <img class="img-responsive img-rounded" src="img/movie/katyar.png">
-                <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
-            </div>
-            <div class="col-sm-4 col-xs-6 panel panel-default">
-                <h3 align="center">Katyar</h3>
-                <img class="img-responsive img-rounded" src="img/movie/katyar.png">
-                <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
-            </div>
-            <div class="col-sm-4 col-xs-6 panel panel-default">
-                <h3 align="center">Katyar</h3>
-                <img class="img-responsive img-rounded" src="img/movie/katyar.png">
+            <div class="col-sm-4 col-xs-6 panel panel-default" ng-repeat="m in movie">
+                <h3 align="center">{{m.name}}</h3>
+                <img class="img-responsive img-rounded" src={{m.image}}>
                 <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
             </div>
         </div>            
@@ -164,7 +141,7 @@
         <div class="row about">
             <div class="col-xs-12">
                 <div class="row">
-                    <img src="img/divider.png" class="img-responsive">
+                    <img src="../img/divider.png" class="img-responsive">
                 </div>
                 <h2 align="Center">ABOUT US</h2>
                 <p class="text-justified">Edmonton Movie Club (EMC) is a non-profit film society registered under the Alberta Societies Act. EMC was formed in December 2012 to promote independent and regional cinema from India among the citizens of Alberta, with a special focus in Edmonton. The co-benefits of EMC include the following: </p>
@@ -184,21 +161,21 @@
         <div class="row sponsor">
             <div class="col-xs-12">
                 <div class="row">
-                    <img src="img/divider.png" class="img-responsive">
+                    <img src="../img/divider.png" class="img-responsive">
                 </div>
                 <h2 align="center" style="padding-bottom: 10px;">OUR PROUD PARTNERS</h2>
                 
                 <div class="col-xs-3">
-                    <img src="img/sponsor_atb.png" class="img-responsive">
+                    <img src="../img/sponsor_atb.png" class="img-responsive">
                 </div>
                 <div class="col-xs-3">
-                    <img src="img/sponsor_eac.png" class="img-responsive">
+                    <img src="../img/sponsor_eac.png" class="img-responsive">
                 </div>
                 <div class="col-xs-3">
-                    <img src="img/sponsor_savoys.png" class="img-responsive">
+                    <img src="../img/sponsor_savoys.png" class="img-responsive">
                 </div>
                 <div class="col-xs-3">
-                    <img src="img/sponser2.jpg" class="img-responsive">
+                    <img src="../img/sponser2.jpg" class="img-responsive">
                 </div>
             </div>
         </div>
@@ -227,9 +204,13 @@
     </footer>
 
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- build:js scripts/main.js -->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
     <script>
         $(document).ready(function(){
             $("#loginButton").click(function(){
