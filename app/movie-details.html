@@ -91,82 +91,54 @@
             </div>
         </div>
     </div>
-    
-        <!-- Main component for a primary marketing message or call to action -->
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-xs-12"> 
-                  <div class="row">
-                      <img src="images/banner.jpg" class="img-responsive">
-                  </div>
-                </div>
-            </div> <!-- end row-header -->
-        </div> <!-- end container -->
         
     <div class="container" ng-controller="MovieController">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="row">
-                    <img src="images/top.png" class="img-responsive">
-                </div>
+            <img src="images/divider.png" class="img-responsive">
+        </div>
+        <div class="row">
+            <div class="jumbotron">
+                <h2>MOVIES</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
-                <nav class="navbar navbar-default">
-                        <ul class="nav navbar-nav nav-tabs">
-                                <li ng-class="{active:isSelected(1)}">
-                                    <a ng-click="select(1)">Now Playing</a> </li>
-                                <li ng-class="{active:isSelected(2)}">
-                                    <a ng-click="select(2)">Coming Soon</a> </li>
-                                <li ng-class="{active:isSelected(3)}">
-                                    <a ng-click="select(3)">Older Movies</a> </li>
-                        </ul>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group has-feedback">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                            </div>
-                            <button type="submit" class="btn btn-default">Search</button>
-                        </form>
-                    </nav>
-                </div>
-            <div class="col-xs-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-xs-6 panel panel-default" ng-repeat="m in movie | filter:filtText">
-                <h3 align="center">{{m.name}}</h3>
-                <img class="img-responsive img-rounded movie-image center-block" style="max-height:300px;" src={{m.image}}>
+            <div class="col-sm-8 col-xs-12">
+                <img style="max-height:500px; margin-top:20px;" class="img-responsive img-thumbnail" src="images/nanuku-poster.jpg">
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <h3>Nanuku Prematho</h3>
+                <hr>
+                <p>Language - Telugu</p>
                 <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Edmonton
+                    </div>
                     <div class="panel-body">
-                        <p class="text-center">Screening - 15th January 2016</p>
-                        <p class="text-center">Time - 3:00pm</p>
+                        <p>Venue - Metro Cinema</p>
+                        <p>Screening - 15th January 2016, 3:00pm</p>
                     </div>
                 </div>
-                <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
-            </div>
-        </div>            
-        
-        
-        <div class="row about">
-            <div class="col-xs-12">
-                <div class="row">
-                    <img src="images/divider.png" class="img-responsive">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Calgary
+                    </div>
+                    <div class="panel-body">
+                        <p>Venue - Metro Cinema</p>
+                        <p>Screening - 15th January 2016, 3:00pm</p>
+                    </div>
                 </div>
-                <h2 align="Center">ABOUT US</h2>
-                <p class="text-justified">Edmonton Movie Club (EMC) is a non-profit film society registered under the Alberta Societies Act. EMC was formed in December 2012 to promote independent and regional cinema from India among the citizens of Alberta, with a special focus in Edmonton. The co-benefits of EMC include the following: </p>
-                
-                <ul>
-                    <li>Provide wholesome entertainment for diverse population from India in the economically prosperous Province of Alberta and in particular, City of Edmonton. Entertainment brings joy and which in turn improves the quality of life;</li>
-                    <li>Educate the local community about the diversity that exists among the Indian population. Understanding the diversity of the India community will in turn will bring cultural harmony and enable the local community to understand the culturally diverse Indian community;</li>
-                    <li>Create awareness about key issues in India through documentary screening; and</li>
-                    <li>Provide non-Bollywood Indian movies to all the people in Edmonton and Calgary.</li>
-                </ul>
-
-                <p>EMC has successfully screened 13 movies in Edmonton and 3 movies in Calgary in 2013 and these movies were well received by the local population, especially the East Indian community. In total, around 1500 people have watched the EMC’s monthly screenings over a period of nine months.</p>
-            
+                <button class="btn btn-success">Book Now</button>
+                <button class="btn btn-default pull-right">Back to Movies</button>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+                <h4>Summary</h4>
+                <p text-align="justified">Naanaku Prematho (English: To father, with love) is a 2016 Telugu action thriller film written and directed by Sukumar and produced by B. V. S. N. Prasad under his Sri Venkateswara Cine Chitra Banner and co-produced by Bhogavalli Bapineedu and Reliance Entertainment. The film features NTR and Rakul Preet Singh in the lead roles while Jagapati Babu and Rajendra Prasad played crucial supporting roles.[3] Nannaku Prematho marks the 25th film of Rama Rao Jr. as an actor.</p>
+            </div>
+            <div class="col-sm-12">
+                <p style="padding:20px"></p>
             </div>
         </div>
+        
         
         <div class="row sponsor">
             <div class="col-xs-12">

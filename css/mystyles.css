@@ -1,12 +1,23 @@
 body {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 15px;
     color: #2c3e50;
-    background: url(../img/paisley.png) repeat;
+    background: url(../app/images/paisley.png) repeat;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.jumbotron {
+    font-size: 48px;
+    text-shadow: 2px 2px 2px #aaa;
 }
 
 .container {
     background: white;
+}
+
+.btn {
+    border-radius: 2px;
 }
 
 .navbar {
