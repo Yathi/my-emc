@@ -139,8 +139,8 @@
                 <img class="img-responsive img-rounded movie-image center-block" style="max-height:300px;" src={{m.image}}>
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p class="text-center">Screening - 15th January 2016</p>
-                        <p class="text-center">Time - 3:00pm</p>
+                        <p class="text-center">Screening : {{m.when | date: 'EEEE - MMM d, y'}} </p>
+                        <p class="text-center">Time : {{m.when | date: 'shortTime'}} </p>
                     </div>
                 </div>
                 <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
