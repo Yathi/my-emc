@@ -12,9 +12,9 @@
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="../css/mystyles.css" rel="stylesheet">
     <!-- endbuild -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,7 +23,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body ng-controller="MovieController">
 	<nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -92,6 +92,51 @@
         </div>
     </div>
     
+    <div id="bookingModal" class="modal fade" role="form" aria-labelledby="bookingModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Book Movie</h4>
+                </div>
+                <div class="modal-body">
+                    
+                    <form class="form-horizontal" role="form" id="reserveform">
+                    <div class="form-group">
+                        <label for="guests" class="col-sm-3 control-label">Select a movie</label>
+                        <div class="col-sm-9">
+                            <select name="mySelect" id="mySelect" ng-options="m.name for m in movie | filter:'now'" ng-model="selectedMovie"></select>
+                        </div>
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="smoking" class="col-sm-3 control-label">Select the time</label>
+                        <div class="col-sm-9">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="form-group has-feedback">
+                        <label for="datetime" class="col-sm-3 control-label">Select the number of tickets:</label>
+                        <div class="col-sm-9">
+                            <input type="number" min="1" max="12" value="1" step="1" name="movie-number">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-primary" id="reserveButton">Book</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
         <!-- Main component for a primary marketing message or call to action -->
         <div class="container">
             <div class="row row-header">
@@ -103,7 +148,7 @@
             </div> <!-- end row-header -->
         </div> <!-- end container -->
         
-    <div class="container" ng-controller="MovieController">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="row">
@@ -143,7 +188,7 @@
                         <p class="text-center">Time : {{m.when | date: 'shortTime'}} </p>
                     </div>
                 </div>
-                <a class="btn btn-success center-block ticketButton">BOOK NOW</a>
+                <a class="btn btn-success center-block ticketButton" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
             </div>
         </div>            
         

@@ -6,6 +6,7 @@ angular.module('emcApp', [])
         $scope.tab = 1;
         $scope.filtText = 'now';
     
+        $scope.selectedMovie = '';
         $scope.movie = [
             {
                 name: 'Wazir',
