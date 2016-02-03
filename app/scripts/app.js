@@ -12,56 +12,65 @@ angular.module('emcApp', [])
                 name: 'Wazir',
                 language: 'Hindi',
                 status: 'now',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/wazir.png',
             },
             {
                 name: 'Katyar',
                 language: 'Marathi',
                 status: 'now',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/katyar.png'
             },{
                 name: 'Vedhalam',
                 language: 'Tamil',
                 status: 'now',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/vedhalam.png'
             },{
                 name: 'Nanuku Prematho',
                 language: 'Telugu',
                 status: 'now',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/nanaku.png'
             },{
                 name: 'Natasamrat',
                 language: 'Hindi',
                 status: 'now',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/natasamrat.png'
             },{
                 name: 'Natasamrat',
                 language: 'Hindi',
                 status: 'soon',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/natasamrat.png'
             },{
                 name: 'Vedhalam',
                 language: 'Tamil',
                 status: 'soon',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/vedhalam.png'
             },{
                 name: 'Vedhalam',
                 language: 'Tamil',
                 status: 'soon',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/vedhalam.png'
             },{
                 name: 'Vedhalam',
                 language: 'Tamil',
                 status: 'old',
-                when: new Date("January 15, 2016 15:00:00"),
+                price: 12,
+                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 image: 'images/movie/katyar.png'
             }
             

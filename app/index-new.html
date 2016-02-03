@@ -103,24 +103,28 @@
                     
                     <form class="form-horizontal" role="form" id="reserveform">
                     <div class="form-group">
-                        <label for="guests" class="col-sm-3 control-label">Select a movie</label>
-                        <div class="col-sm-9">
+                        <label for="guests" class="col-sm-4 control-label">Select a movie</label>
+                        <div class="col-sm-8">
                             <select name="mySelect" id="mySelect" ng-options="m.name for m in movie | filter:'now'" ng-model="selectedMovie"></select>
                         </div>
                     </div>
                         
                     <div class="form-group">
-                        <label for="smoking" class="col-sm-3 control-label">Select the time</label>
-                        <div class="col-sm-9">
-                            
+                        <label for="time" class="col-sm-4 control-label">Select the time</label>
+                        <div class="col-sm-8">
+<!--                            <select name="mySelect" id="mySelect" ng-options="selectedMovie.name for m in movie | filter:'now'" ng-model="selectedMovie"></select>-->
                         </div>
                     </div>
                     
                     <div class="form-group has-feedback">
-                        <label for="datetime" class="col-sm-3 control-label">Select the number of tickets:</label>
-                        <div class="col-sm-9">
-                            <input type="number" min="1" max="12" value="1" step="1" name="movie-number">
+                        <label for="numTickets" class="col-sm-4 control-label">Select the number of tickets:</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="1" max="12" ng-value="1" step="1" ng-model="numTickets" name="movie-number">
                         </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label for="costLabel" class="col-sm-4 control-label">Total Cost:</label>
+                        <label for="costPrice" class="col-sm-1 control-label">{{selectedMovie.price * numTickets + 0.04 * (selectedMovie.price * numTickets) | currency}} </label>
                     </div>
                     <div class="modal-footer">
                         <div class="form-group">
@@ -184,8 +188,10 @@
                 <img class="img-responsive img-rounded movie-image center-block" style="max-height:300px;" src={{m.image}}>
                 <div class="panel panel-info">
                     <div class="panel-body">
-                        <p class="text-center">Screening : {{m.when | date: 'EEEE - MMM d, y'}} </p>
-                        <p class="text-center">Time : {{m.when | date: 'shortTime'}} </p>
+<!--                        <div ng-repeat="d in m.when">-->
+                        <p class="text-center">Screening : {{m.when[0] | date: 'EEEE - MMM d, y'}}</p>
+                        <p class="text-center">Time : {{m.when[0] | date: 'shortTime'}} </p>
+<!--                        </div>-->
                     </div>
                 </div>
                 <a class="btn btn-success center-block ticketButton" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
