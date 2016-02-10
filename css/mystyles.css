@@ -2,9 +2,10 @@ body {
     font-family: "Open Sans", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 15px;
     color: #2c3e50;
-    background: url(../app/images/paisley.png) repeat;
+    background: url(../images/paisley.png) repeat;
     font-style: normal;
     font-weight: 400;
+    line-height: 1.625em;
 }
 
 .jumbotron {
@@ -41,8 +42,26 @@ body {
 .sponsor {
     padding-bottom: 10px;
 }
+
+.sponsor-image {
+    box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+    padding-bottom: 10px;
+}
+
 .about {
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background: #363B48;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    font-family: 'latolight', sans-serif;
+}
+
+.about > p {    
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
 .footer-text {
@@ -100,4 +119,15 @@ buttonthingy {
 
 .affix {
     top:20px;
+}
+
+.board > div > img {
+    max-height: 240px;
+}
+
+.board-members {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+/*    border-bottom: 2px solid transparent;*/
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
