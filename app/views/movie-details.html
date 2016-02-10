@@ -12,9 +12,9 @@
                 <img style="max-height:500px; margin-top:20px;" class="img-responsive img-thumbnail" src="images/nanuku-poster.jpg">
             </div>
             <div class="col-sm-4 col-xs-12">
-                <h3>Nanuku Prematho</h3>
+                <h3>{{movie.name}} </h3>
                 <hr>
-                <p>Language - Telugu</p>
+                <p>Language - {{movie.language}}</p>
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         Edmonton
@@ -34,7 +34,8 @@
                     </div>
                 </div>
                 <button class="btn btn-success">Book Now</button>
-                <button class="btn btn-default pull-right">Back to Movies</button>
+                <a ui-sref="app">
+                <button class="btn btn-default pull-right">Back to Movies</button></a>
             </div>
             <div class="col-sm-12 col-xs-12">
                 <h4>Summary</h4>

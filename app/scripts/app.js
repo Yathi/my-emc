@@ -35,11 +35,11 @@ angular.module('emcApp', ['ui.router', 'ngResource'])
         
             // route for the contactus page
             .state('app.moviedetails', {
-                url:'contactus',
+                url:'moviedetails/:id',
                 views: {
                     'content@': {
                         templateUrl : 'views/movie-details.html',
-                        controller  : 'MovieController'                  
+                        controller  : 'MovieDetailController'                  
                     }
                 }
             })

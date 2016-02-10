@@ -96,7 +96,7 @@ angular.module('emcApp')
         }
         
         this.getMovie = function(index) {
-            return movies[index];
+            return movies[index-1];
         }
 
         });
