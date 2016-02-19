@@ -121,4 +121,28 @@ angular.module('emcApp')
             
             
             
-        }]);
+        }])
+    .controller('EventController', ['$scope', '$stateParams', 'eventFactory', function($scope, $stateParams, $eventFactory) {
+        
+        $scope.showEvent = false;
+        $scope.message = "Loading.. ";
+        $scope.events = $eventFactory.getEvents();
+    }])
+
+    .controller('HeaderController', ['$scope', function($scope) {
+        $scope.tab = 1;
+        
+        $scope.isSelected = function(checkTab) {
+            return ($scope.tab == checkTab);
+        };
+        
+        $scope.select = function(setTab) {
+                $scope.tab = setTab;
+        }
+        
+        
+    }])
+
+
+
+;

@@ -93,10 +93,36 @@ angular.module('emcApp')
     
         this.getMovies = function() {
             return movies;
-        }
+        };
         
         this.getMovie = function(index) {
             return movies[index-1];
-        }
+        };
 
-        });
+        })
+
+    .service('eventFactory', function() {
+    
+    var events = [
+        {
+            id:1,
+            name: 'Diwali - Celebration of Lights',
+            when: new Date("November 3, 2013 15:00:00"),
+            image: 'images/event/diwali2013.jpg'
+        },
+        {
+            id:2,
+            name: 'Diwali - Celebration of Lights',
+            when: new Date("October 19, 2014 14:00:00"),
+            image: 'images/event/diwali2014.jpg'
+        }
+    ];
+    
+    this.getEvents = function() {
+        return events;
+    }
+})
+
+
+
+;

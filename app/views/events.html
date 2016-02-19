@@ -1,0 +1,24 @@
+<div class="container" ng-controller="EventController">
+    <div class="row">
+        <div class="col-xs-12"> 
+            <div class="row">
+              <img src="images/divider.png" class="img-responsive">
+          </div>
+        </div>
+    </div> <!-- end row-header -->
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-4" ng-repeat = "event in events">
+            <div class="panel panel-defaul">
+                <h3 align="center">{{event.name}} </h3>
+                <img class="img img-responsive img-thumbnail center-block" style="height:350px;" src={{event.image}}>
+                <div class="panel-body">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</div>

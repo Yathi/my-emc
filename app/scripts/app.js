@@ -10,6 +10,7 @@ angular.module('emcApp', ['ui.router', 'ngResource'])
                 views: {
                     'header': {
                         templateUrl : 'views/header.html',
+                        controller: 'HeaderController'
                     },
                     'content': {
                         templateUrl : 'views/home.html',
@@ -45,12 +46,12 @@ angular.module('emcApp', ['ui.router', 'ngResource'])
             })
 
             // route for the menu page
-            .state('app.menu', {
-                url: 'menu',
+            .state('app.events', {
+                url: 'events',
                 views: {
                     'content@': {
-                        templateUrl : 'views/menu.html',
-                        controller  : 'MenuController'
+                        templateUrl : 'views/events.html',
+                        controller  : 'EventController'
                     }
                 }
             })
