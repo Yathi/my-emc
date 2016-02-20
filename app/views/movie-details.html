@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col-sm-8 col-xs-12">
-                <img style="max-height:500px; margin-top:20px;" class="img-responsive img-thumbnail" src="images/nanuku-poster.jpg">
+                <img style="max-height:500px; margin-top:20px;" class="img-responsive img-thumbnail" src={{movie.bigimage}} >
             </div>
             <div class="col-sm-4 col-xs-12">
                 <h3>{{movie.name}} </h3>
@@ -20,8 +20,8 @@
                         Edmonton
                     </div>
                     <div class="panel-body">
-                        <p>Venue - Metro Cinema</p>
-                        <p>Screening - 15th January 2016, 3:00pm</p>
+                        <p>Venue - {{movie.venue}} </p>
+                        <p>Screening - {{movie.when[0] | date: 'EEEE - MMM d, y @ hh:mma'}}</p>
                     </div>
                 </div>
                 <div class="panel panel-info">
@@ -39,7 +39,7 @@
             </div>
             <div class="col-sm-12 col-xs-12">
                 <h4>Summary</h4>
-                <p text-align="justified">Naanaku Prematho (English: To father, with love) is a 2016 Telugu action thriller film written and directed by Sukumar and produced by B. V. S. N. Prasad under his Sri Venkateswara Cine Chitra Banner and co-produced by Bhogavalli Bapineedu and Reliance Entertainment. The film features NTR and Rakul Preet Singh in the lead roles while Jagapati Babu and Rajendra Prasad played crucial supporting roles.[3] Nannaku Prematho marks the 25th film of Rama Rao Jr. as an actor.</p>
+                <p text-align="justified">{{movie.description}} </p>
             </div>
             <div class="col-sm-12">
                 <p style="padding:20px"></p>

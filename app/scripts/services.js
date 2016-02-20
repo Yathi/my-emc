@@ -11,8 +11,10 @@ angular.module('emcApp')
                 status: 'now',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/wazir.jpg',
                 image: 'images/movie/wazir.png',
+                description: 'Naanaku Prematho (English: To father, with love) is a 2016 Telugu action thriller film written and directed by Sukumar and produced by B. V. S. N. Prasad under his Sri Venkateswara Cine Chitra Banner and co-produced by Bhogavalli Bapineedu and Reliance Entertainment. The film features NTR and Rakul Preet Singh in the lead roles while Jagapati Babu and Rajendra Prasad played crucial supporting roles. Nannaku Prematho marks the 25th film of Rama Rao Jr. as an actor.'
                 
             },
             {
@@ -22,8 +24,10 @@ angular.module('emcApp')
                 status: 'now',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/katyar.png'
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/katyar.jpg',
+                image: 'images/movie/katyar.png',
+                description: 'Katyar Kaljat Ghusali (English: A dagger through the heart) is a 2015 Marathi film based on a play by the same name. Directed by Subodh Bhave, the film stars Sachin Pilgaonkar, Shankar Mahadevan, and Subodh Bhave in lead roles. The film marks the acting debut for Mahadevan and directorial debut for Bhave. The original play premiered in 1967 in Mumbai, where Hindustani classical vocalist Vasantrao Deshpande played one of the protagonists. In 2010, the play was relaunched with protagonists essayed by Rahul Deshpande, grandson of Vasantrao Deshpande and singer Mahesh Kale.'
             },{
                 id: 3,
                 name: 'Vedhalam',
@@ -31,8 +35,10 @@ angular.module('emcApp')
                 status: 'now',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/vedhalam.png'
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/vedhalam.jpg',
+                image: 'images/movie/vedhalam.png',
+                description: 'Naanaku Prematho (English: To father, with love) is a 2016 Telugu action thriller film written and directed by Sukumar and produced by B. V. S. N. Prasad under his Sri Venkateswara Cine Chitra Banner and co-produced by Bhogavalli Bapineedu and Reliance Entertainment. The film features NTR and Rakul Preet Singh in the lead roles while Jagapati Babu and Rajendra Prasad played crucial supporting roles. Nannaku Prematho marks the 25th film of Rama Rao Jr. as an actor.'
             },{
                 id: 4,
                 name: 'Nanuku Prematho',
@@ -40,8 +46,10 @@ angular.module('emcApp')
                 status: 'now',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/nanaku.png'
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/nanuku-poster.jpg',
+                image: 'images/movie/nanaku.png',
+                description: 'Naanaku Prematho (English: To father, with love) is a 2016 Telugu action thriller film written and directed by Sukumar and produced by B. V. S. N. Prasad under his Sri Venkateswara Cine Chitra Banner and co-produced by Bhogavalli Bapineedu and Reliance Entertainment. The film features NTR and Rakul Preet Singh in the lead roles while Jagapati Babu and Rajendra Prasad played crucial supporting roles. Nannaku Prematho marks the 25th film of Rama Rao Jr. as an actor.'
             },{
                 id: 5,
                 name: 'Natasamrat',
@@ -49,44 +57,21 @@ angular.module('emcApp')
                 status: 'now',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/natasamrat.png'
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/natasamrat.jpg',
+                image: 'images/movie/natasamrat.png',
+                description: 'Natsamrāt (The King of Actors) is a 2016 Marathi language film featuring Nana Patekar in the leading role. It is directed by Mahesh Manjrekar and produced by Patekar and Vishwas Joshi under the banner of Great Maratha Entertainment, Gajanan Chitra and Fincraft Media & Entertainment Pvt. Ltd. The film was officially released in India on 1st Jan. 2016 and got a very good response at opening. Most of them have given rating of 4 out 5 to this film.'
             },{
                 id: 6,
-                name: 'Natasamrat',
-                language: 'Hindi',
-                status: 'soon',
-                price: 12,
-                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/natasamrat.png'
-            },{
-                id: 7,
                 name: 'Vedhalam',
                 language: 'Tamil',
                 status: 'soon',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/vedhalam.png'
-            },{
-                id: 8,
-                name: 'Vedhalam',
-                language: 'Tamil',
-                status: 'soon',
-                price: 12,
-                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/vedhalam.png'
-            },{
-                id: 9,
-                name: 'Vedhalam',
-                language: 'Tamil',
-                status: 'old',
-                price: 12,
-                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
-                bigimage: 'images/nanuku-poster.jpg',
-                image: 'images/movie/katyar.png'
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/vedhalam.jpg',
+                image: 'images/movie/vedhalam.png',
+                description: 'Naanaku Prematho (English: To father, with love) is a 2016 Telugu action thriller film written and directed by Sukumar and produced by B. V. S. N. Prasad under his Sri Venkateswara Cine Chitra Banner and co-produced by Bhogavalli Bapineedu and Reliance Entertainment. The film features NTR and Rakul Preet Singh in the lead roles while Jagapati Babu and Rajendra Prasad played crucial supporting roles. Nannaku Prematho marks the 25th film of Rama Rao Jr. as an actor.'
             }
             
         ];
