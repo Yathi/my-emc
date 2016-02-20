@@ -8,7 +8,7 @@ angular.module('emcApp')
                 id: 1,
                 name: 'Wazir',
                 language: 'Hindi',
-                status: 'now',
+                status: 'old',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
@@ -21,7 +21,7 @@ angular.module('emcApp')
                 id: 2,
                 name: 'Katyar',
                 language: 'Marathi',
-                status: 'now',
+                status: 'old',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
@@ -32,7 +32,7 @@ angular.module('emcApp')
                 id: 3,
                 name: 'Vedhalam',
                 language: 'Tamil',
-                status: 'now',
+                status: 'old',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
@@ -43,7 +43,7 @@ angular.module('emcApp')
                 id: 4,
                 name: 'Nanuku Prematho',
                 language: 'Telugu',
-                status: 'now',
+                status: 'old',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
@@ -54,7 +54,7 @@ angular.module('emcApp')
                 id: 5,
                 name: 'Natasamrat',
                 language: 'Hindi',
-                status: 'now',
+                status: 'old',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
@@ -63,15 +63,15 @@ angular.module('emcApp')
                 description: 'Natsamrāt (The King of Actors) is a 2016 Marathi language film featuring Nana Patekar in the leading role. It is directed by Mahesh Manjrekar and produced by Patekar and Vishwas Joshi under the banner of Great Maratha Entertainment, Gajanan Chitra and Fincraft Media & Entertainment Pvt. Ltd. The film was officially released in India on 1st Jan. 2016 and got a very good response at opening. Most of them have given rating of 4 out 5 to this film.'
             },{
                 id: 6,
-                name: 'Vedhalam',
+                name: 'Miruthan',
                 language: 'Tamil',
-                status: 'soon',
-                price: 12,
-                when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
+                status: 'now',
+                price: 15,
+                when: [new Date("Feb 21, 2016 16:00:00")],
                 venue: 'Metro Cinema',
-                bigimage: 'images/big/vedhalam.jpg',
-                image: 'images/movie/vedhalam.png',
-                description: 'Naanaku Prematho (English: To father, with love) is a 2016 Telugu action thriller film written and directed by Sukumar and produced by B. V. S. N. Prasad under his Sri Venkateswara Cine Chitra Banner and co-produced by Bhogavalli Bapineedu and Reliance Entertainment. The film features NTR and Rakul Preet Singh in the lead roles while Jagapati Babu and Rajendra Prasad played crucial supporting roles. Nannaku Prematho marks the 25th film of Rama Rao Jr. as an actor.'
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/miruthan.png',
+                description: 'Miruthan is an upcoming first Tamil Zombie horror film directed by Shakti Soundar Rajan, starring Jayam Ravi and Lakshmi Menon in the leading roles. It is the first Indian Tamil language zombie film.'
             }
             
         ];

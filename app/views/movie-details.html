@@ -20,8 +20,8 @@
                         Edmonton
                     </div>
                     <div class="panel-body">
-                        <p>Venue - {{movie.venue}} </p>
-                        <p>Screening - {{movie.when[0] | date: 'EEEE - MMM d, y @ hh:mma'}}</p>
+                        <p>Venue : {{movie.venue}} </p>
+                        <p>Screening : {{movie.when[0] | date: ' EEEE - MMM d, y @ hh:mma'}}</p>
                     </div>
                 </div>
                 <div class="panel panel-info">
@@ -33,7 +33,7 @@
                         <p>Screening - 15th January 2016, 3:00pm</p>
                     </div>
                 </div>
-                <button class="btn btn-success">Book Now</button>
+                <button ng-hide="movie.status == 'old'" class="btn btn-success">Book Now</button>
                 <a ui-sref="app">
                 <button class="btn btn-default pull-right">Back to Movies</button></a>
             </div>
