@@ -3,15 +3,16 @@
 angular.module('emcApp')
         .service('movieFactory', function($rootScope) {
     
-        var location = "EDMONTON";
+        var currentLocation = "EDMONTON";
     
-        var movies_e = [
+        var movies = [
             {
                 id: 1,
                 name: 'Wazir',
                 language: 'Hindi',
                 status: 'old',
                 price: 12,
+                city: ['EDMONTON'],
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/wazir.jpg',
@@ -25,6 +26,7 @@ angular.module('emcApp')
                 language: 'Marathi',
                 status: 'year',
                 price: 12,
+                city: ['EDMONTON'],
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/katyar.jpg',
@@ -36,6 +38,7 @@ angular.module('emcApp')
                 language: 'Tamil',
                 status: 'old',
                 price: 12,
+                city: ['EDMONTON'],
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/vedhalam.jpg',
@@ -47,6 +50,7 @@ angular.module('emcApp')
                 language: 'Telugu',
                 status: 'year',
                 price: 12,
+                city: ['EDMONTON'],
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/nanuku-poster.jpg',
@@ -58,6 +62,7 @@ angular.module('emcApp')
                 language: 'Hindi',
                 status: 'old',
                 price: 12,
+                city: ['CALGARY'],
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/natasamrat.jpg',
@@ -69,6 +74,7 @@ angular.module('emcApp')
                 language: 'Tamil',
                 status: 'now',
                 price: 15,
+                city: ['EDMONTON'],
                 when: [new Date("Feb 21, 2016 16:00:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
@@ -79,7 +85,8 @@ angular.module('emcApp')
                 name: 'Masss',
                 language: 'Tamil',
                 status: 'old',
-                price: 15,
+                price: 12,
+                city: ['EDMONTON'],
                 when: [new Date("May 31, 2015 10:30:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
@@ -92,6 +99,7 @@ angular.module('emcApp')
                 language: 'Tamil',
                 status: 'old',
                 price: 15,
+                city: ['EDMONTON'],
                 when: [new Date("Apr 25, 2015 10:30:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
@@ -102,29 +110,37 @@ angular.module('emcApp')
         ];
     
         this.getMovies = function() {
-            if (location == "EDMONTON"){
-                return movies_e;   
+            var movieList = [];
+            //Function to check if the movie list has the particular city
+            function contains(a, obj) { 
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i] === obj) {
+                        return true;
+                    }
+                }
+                return false;
             }
-            else if (location == "CALGARY"){
-                return movies_c;
+            //Loops through every movie to check if that movie is shown in the current Location
+            for (var i in movies){
+                if (contains(movies[i].city, currentLocation)){
+                    movieList.push(movies[i]);
+                }
             }
+            return movieList;
         };
         
         this.getMovie = function(index) {
-            if (location == "EDMONTON"){
-                return movies_e[index-1];    
-            }
+            return movies[index-1];
         };
     
         this.setLoc = function(l) {
             console.log("Service setLoc called with " + l);
-            location = l;
-            console.log("Service value of location is " + location);
+            currentLocation = l;
             $rootScope.$broadcast('locationChange');
         }
         
         this.getLoc = function() {
-            return location;
+            return currentLocation;
         }
 
         })
