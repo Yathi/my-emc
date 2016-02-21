@@ -10,6 +10,10 @@ angular.module('emcApp')
         $scope.selectedMovie = '';
             
         $scope.movies = movieFactory.getMovies();
+            
+        $scope.$on('locationChange', function(){
+            $scope.movies = movieFactory.getMovies();
+        })
         
         $scope.members = [
             {
@@ -100,7 +104,7 @@ angular.module('emcApp')
             if (setTab === 1)
                     $scope.filtText = "now";
                 else if (setTab === 2)
-                    $scope.filtText = "soon";
+                    $scope.filtText = "year";
                 else if (setTab === 3)
                     $scope.filtText = "old";
                 else
@@ -129,8 +133,10 @@ angular.module('emcApp')
         $scope.events = $eventFactory.getEvents();
     }])
 
-    .controller('HeaderController', ['$scope', function($scope) {
+    .controller('HeaderController', ['$scope','movieFactory', function($scope, movieFactory) {
         $scope.tab = 1;
+        
+        $scope.loc = movieFactory.getLoc();
         
         $scope.isSelected = function(checkTab) {
             return ($scope.tab == checkTab);
@@ -138,6 +144,11 @@ angular.module('emcApp')
         
         $scope.select = function(setTab) {
                 $scope.tab = setTab;
+        }
+        
+        $scope.setLoc = function(locat){
+            movieFactory.setLoc(locat);
+            $scope.loc = locat;
         }
         
         

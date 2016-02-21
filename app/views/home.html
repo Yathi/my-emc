@@ -81,7 +81,7 @@
                                 <li ng-class="{active:isSelected(1)}">
                                     <a ng-click="select(1)">Now Playing</a> </li>
                                 <li ng-class="{active:isSelected(2)}">
-                                    <a ng-click="select(2)">Coming Soon</a> </li>
+                                    <a ng-click="select(2)">Movies shown this year</a> </li>
                                 <li ng-class="{active:isSelected(3)}">
                                     <a ng-click="select(3)">Older Movies</a> </li>
                         </ul>
@@ -110,7 +110,7 @@
 <!--                        </div>-->
                     </div>
                 </div>
-                <a class="btn btn-success center-block ticketButton" ng-hide="m.status == 'old'" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
+                <a class="btn btn-success center-block ticketButton" ng-show="m.status == 'now'" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
             </div>
         </div>
 </div> <!-- end container -->   

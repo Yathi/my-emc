@@ -1,9 +1,11 @@
 'use strict';
 
 angular.module('emcApp')
-        .service('movieFactory', function() {
+        .service('movieFactory', function($rootScope) {
     
-        var movies = [
+        var location = "EDMONTON";
+    
+        var movies_e = [
             {
                 id: 1,
                 name: 'Wazir',
@@ -21,7 +23,7 @@ angular.module('emcApp')
                 id: 2,
                 name: 'Katyar',
                 language: 'Marathi',
-                status: 'old',
+                status: 'year',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
@@ -43,7 +45,7 @@ angular.module('emcApp')
                 id: 4,
                 name: 'Nanuku Prematho',
                 language: 'Telugu',
-                status: 'old',
+                status: 'year',
                 price: 12,
                 when: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")],
                 venue: 'Metro Cinema',
@@ -72,17 +74,58 @@ angular.module('emcApp')
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/miruthan.png',
                 description: 'Miruthan is an upcoming first Tamil Zombie horror film directed by Shakti Soundar Rajan, starring Jayam Ravi and Lakshmi Menon in the leading roles. It is the first Indian Tamil language zombie film.'
+            },{
+                id: 7,
+                name: 'Masss',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                when: [new Date("May 31, 2015 10:30:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/miruthan.png',
+                description: 'Miruthan is an upcoming first Tamil Zombie horror film directed by Shakti Soundar Rajan, starring Jayam Ravi and Lakshmi Menon in the leading roles. It is the first Indian Tamil language zombie film.'
+            },
+            {
+                id: 8,
+                name: 'Ok Kanmani',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                when: [new Date("Apr 25, 2015 10:30:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/miruthan.png',
+                description: 'Miruthan is an upcoming first Tamil Zombie horror film directed by Shakti Soundar Rajan, starring Jayam Ravi and Lakshmi Menon in the leading roles. It is the first Indian Tamil language zombie film.'
             }
             
         ];
     
         this.getMovies = function() {
-            return movies;
+            if (location == "EDMONTON"){
+                return movies_e;   
+            }
+            else if (location == "CALGARY"){
+                return movies_c;
+            }
         };
         
         this.getMovie = function(index) {
-            return movies[index-1];
+            if (location == "EDMONTON"){
+                return movies_e[index-1];    
+            }
         };
+    
+        this.setLoc = function(l) {
+            console.log("Service setLoc called with " + l);
+            location = l;
+            console.log("Service value of location is " + location);
+            $rootScope.$broadcast('locationChange');
+        }
+        
+        this.getLoc = function() {
+            return location;
+        }
 
         })
 

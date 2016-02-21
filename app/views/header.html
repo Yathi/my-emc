@@ -20,10 +20,11 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EDMONTON <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{loc}} <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">CALGARY</a></li>
-            <li><a href="#">FORT MCMURRAY</a></li>
+            <li><a ng-click="setLoc('EDMONTON')" href="#">EDMONTON</a></li>
+            <li><a ng-click="setLoc('CALGARY')" href="#">CALGARY</a></li>
+            <li><a ng-click="setLoc('FORT MCMURRAY')" href="#">FORT MCMURRAY</a></li>
           </ul>
         </li>
           <li><a data-toggle="modal" data-target="#loginModal" class="">SIGN IN</a> </li>
