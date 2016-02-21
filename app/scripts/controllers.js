@@ -102,7 +102,7 @@ angular.module('emcApp')
                 $scope.tab = setTab;
             
             if (setTab === 1)
-                    $scope.filtText = "now";
+                    $scope.filtText = "now_showing";
                 else if (setTab === 2)
                     $scope.filtText = "year";
                 else if (setTab === 3)

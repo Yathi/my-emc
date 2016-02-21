@@ -72,7 +72,7 @@ angular.module('emcApp')
                 id: 6,
                 name: 'Miruthan',
                 language: 'Tamil',
-                status: 'now',
+                status: 'now_showing',
                 price: 15,
                 city: ['EDMONTON'],
                 when: [new Date("Feb 21, 2016 16:00:00")],
@@ -86,25 +86,116 @@ angular.module('emcApp')
                 language: 'Tamil',
                 status: 'old',
                 price: 12,
-                city: ['EDMONTON'],
+                city: ['EDMONTON', 'CALGARY'],
                 when: [new Date("May 31, 2015 10:30:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/mass.png',
+                description: 'Masss is an upcoming Tamil Action comedy film directed by Venkat Prabhu. Produced by K. E. Gnanavel Raja under his newly launched studio Aadnah Arts, it features an ensemble cast including Suriya, Nayantara, Parthiban, Samuthirakani, Jayaram and Pranitha Subhash. Yuvan Shankar Raja composed the music for the film and cinematography was handled by R. D. Rajasekhar.'
+            },
+            {
+                id: 8,
+                name: 'O Kadhal Kanmani',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY'],
+                when: [new Date("Apr 25, 2015 10:30:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/ok_kanmani.jpg',
+                image: 'images/movie/ok_kanmani.png',
+                description: 'O Kadhal Kanmani (English: Oh Love, Apple of my Eye), also known as OK Kanmani, is an upcoming Tamil romantic drama film directed by Mani Ratnam and produced by his home studio Madras Talkies. The film stars Dulquer Salmaan and Nithya Menon in lead roles and tells the story of a young couple cohabiting in India. The soundtrack album and film score are composed by A. R. Rahman.'
+            },
+            {
+                id: 9,
+                name: 'Lailaa o Lailaa',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: [new Date("May 24, 2015 18:15:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/miruthan.png',
                 description: 'Miruthan is an upcoming first Tamil Zombie horror film directed by Shakti Soundar Rajan, starring Jayam Ravi and Lakshmi Menon in the leading roles. It is the first Indian Tamil language zombie film.'
             },
             {
-                id: 8,
-                name: 'Ok Kanmani',
+                id: 10,
+                name: '36 Vayadhinile',
                 language: 'Tamil',
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON'],
-                when: [new Date("Apr 25, 2015 10:30:00")],
+                when: [new Date("May 18, 2015 10:30:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/36.jpg',
+                image: 'images/movie/36.png',
+                description: '36 Vayadhinile (English: At the age of thirty six) is an Indian Tamil comedy drama film directed by Rosshan Andrrews, written by Bobby Sanjay and produced by Suriya under his production studio 2D Entertainment. It is an official remake of the Malayalam film "How Old Are You" (2014), the film features Jyothika in the leading role, while Rahman essays a supporting role. It marked the comeback of one of the most celebrated actresses in Tamil cinema, Jyothika, and her performance has been the highlight of positive critical reviews.'
+            },
+            {
+                id: 11,
+                name: 'Oru Vadakan Selfie',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: [new Date("May 02, 2015 10:30:00"), new Date("May 03, 2015 9:30:00")],
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/miruthan.png',
-                description: 'Miruthan is an upcoming first Tamil Zombie horror film directed by Shakti Soundar Rajan, starring Jayam Ravi and Lakshmi Menon in the leading roles. It is the first Indian Tamil language zombie film.'
+                description: 'Oru Vadakkan Selfie (English: A Northern Selfie) is a 2015 Malayalam comedy thriller cum road movie directed by G. Prajith and scripted by Vineeth Sreenivasan. The film features Nivin Pauly, Manjima Mohan, Aju Varghese, Neeraj Madhav and Vineeth Sreenivasan. Music is composed by Shaan Rahman. The film released on March 27 and received highly positive reviews from critics as well as audience. And became the first commercial successful Malayalam film of 2015 along with Ennum Eppozhum.'
+            }
+            ,{
+                id: 12,
+                name: 'Ennum Epozhum',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: [new Date("Apr 12, 2015 18:15:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/miruthan.png',
+                description: 'Ennum Eppozhum (Malayalam:എന്നും എപ്പോഴും) (English: Forever Always), is a 2015 Malayalam comedy family drama film directed by Sathyan Anthikad and produced by Antony Perumbavoor under the banner of Aashirvad Cinemas. It stars Mohanlal, Manju Warrier, Innocent, Reenu Mathews, Jacob Gregory, Lena Abhilash and Renji Panicker in the main roles. It is written by Ranjan Pramod based on a story by actor Raveendran.'
+            }
+            ,{
+                id: 13,
+                name: 'Bajirao Mastani',
+                language: 'Hindi',
+                status: 'now_showing',
+                price: 12,
+                city: ['FORT MCMURRAY'],
+                when: [new Date("Feb 20, 2015 09:30:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/bajrao.png',
+                description: 'Bajirao Mastani is a 2015 Indian epic historical romance film directed by Sanjay Leela Bhansali, who also composed the music score of the film. It is jointly produced by Bhaansali and Eros International. The film stars Ranveer Singh as Bajirao I and Deepika Padukone as Mastani, with Priyanka Chopra playing Rao\'s first wife Kashibai.'
+            }
+            ,{
+                id: 14,
+                name: 'Ennum Epozhum',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: [new Date("Apr 12, 2015 18:15:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/miruthan.png',
+                description: 'Ennum Eppozhum (Malayalam:എന്നും എപ്പോഴും) (English: Forever Always), is a 2015 Malayalam comedy family drama film directed by Sathyan Anthikad and produced by Antony Perumbavoor under the banner of Aashirvad Cinemas. It stars Mohanlal, Manju Warrier, Innocent, Reenu Mathews, Jacob Gregory, Lena Abhilash and Renji Panicker in the main roles. It is written by Ranjan Pramod based on a story by actor Raveendran.'
+            }
+            ,{
+                id: 15,
+                name: 'Ennum Epozhum',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: [new Date("Apr 12, 2015 18:15:00")],
+                venue: 'Metro Cinema',
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/miruthan.png',
+                description: 'Ennum Eppozhum (Malayalam:എന്നും എപ്പോഴും) (English: Forever Always), is a 2015 Malayalam comedy family drama film directed by Sathyan Anthikad and produced by Antony Perumbavoor under the banner of Aashirvad Cinemas. It stars Mohanlal, Manju Warrier, Innocent, Reenu Mathews, Jacob Gregory, Lena Abhilash and Renji Panicker in the main roles. It is written by Ranjan Pramod based on a story by actor Raveendran.'
             }
             
         ];

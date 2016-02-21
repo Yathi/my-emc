@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('emcApp', ['ui.router', 'ngResource'])
+angular.module('emcApp', ['ui.router', 'ngResource', 'ngAnimate'])
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
         
