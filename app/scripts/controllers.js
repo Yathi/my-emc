@@ -5,7 +5,7 @@ angular.module('emcApp')
         .controller('MovieController', ['$scope', 'movieFactory', function($scope, movieFactory) {
         
         $scope.tab = 1;
-        $scope.filtText = 'now';
+        $scope.filtText = 'now_showing';
     
         $scope.selectedMovie = '';
             
@@ -120,7 +120,6 @@ angular.module('emcApp')
         
             $scope.showMovie = false;
             $scope.message = "Loading ...";
-            console.log("Movie Detail controller called");
             $scope.movie = movieFactory.getMovie(parseInt($stateParams.id,10));
             
             
