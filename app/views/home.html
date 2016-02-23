@@ -99,16 +99,21 @@
         <div class="row">
             <div class="col-sm-4 col-xs-6 panel panel-default movie-panel" ng-repeat="m in movies | filter:filtText | orderBy: myFilter(m)">
                 <h3 align="center">{{m.name}}</h3>
-                <a ui-sref="app.moviedetails({id:m.id})" eat-click-if="m.status == 'old'">
-                <img class="img-responsive img-rounded movie-image center-block" style="max-height:300px;" src={{m.image}}>
-                </a>
-                <div class="panel panel-info">
-                    <div class="panel-body">
+                <div class="movie-image-container">
+                    <a ui-sref="app.moviedetails({id:m.id})" eat-click-if="m.status == 'old'">
+                        <img class="img-responsive img-rounded" src={{m.image}}>
+                    
+                        <div class="text">
 <!--                        <div ng-repeat="d in m.when">-->
                         <p class="text-center">Screening : {{m.when.edmonton[0] | date: 'EEEE - MMM d, y'}}</p>
                         <p class="text-center">Time : {{m.when.edmonton[0] | date: 'shortTime'}} </p>
 <!--                        </div>-->
-                    </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </a>
+                </div>
+                <div>
+                    
                 </div>
                 <a class="btn btn-success center-block ticketButton" ng-show="m.status == 'now_showing'" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
             </div>

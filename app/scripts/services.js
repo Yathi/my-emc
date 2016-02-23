@@ -355,7 +355,7 @@ angular.module('emcApp')
             }
             ,{
                 id: 28,
-                name: 'Sapthamashree Thaskaraha',
+                name: 'Sapthamashree',
                 language: 'Malayalam',
                 status: 'old',
                 price: 15,
