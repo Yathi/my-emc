@@ -116,7 +116,7 @@ angular.module('emcApp')
                 when: {edmonton: [new Date("May 24, 2015 18:15:00")]},
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
-                image: 'images/movie/miruthan.png',
+                image: 'images/movie/lol.png',
                 description: 'Miruthan is an upcoming first Tamil Zombie horror film directed by Shakti Soundar Rajan, starring Jayam Ravi and Lakshmi Menon in the leading roles. It is the first Indian Tamil language zombie film.'
             },
             {
@@ -263,42 +263,198 @@ angular.module('emcApp')
                 description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
             }
             ,{
-                id: 20,
+                id: 21,
                 name: 'Apur Panchali',
                 language: 'Bengali',
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON', 'CALGARY'],
                 when: {edmonton: [new Date("Nov 02, 2015 13:00:00")]},
-                venue: 'Landmark Cinemas 10',
+                venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/apur_panchali.png',
                 description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
             }
             ,{
-                id: 20,
+                id: 22,
                 name: 'Chaar',
                 language: 'Bengali',
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON', 'CALGARY'],
                 when: {edmonton: [new Date("Nov 02, 2015 13:00:00")]},
-                venue: 'Landmark Cinemas 10',
+                venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/Chaar.png',
                 description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
             }
             ,{
-                id: 20,
+                id: 23,
                 name: 'Aagadu',
                 language: 'Telugu',
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON', 'CALGARY'],
                 when: {edmonton: [new Date("Sep 20, 2015 15:00:00")]},
-                venue: 'Landmark Cinemas 10',
+                venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/aagadu.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 24,
+                name: 'Peruchazhi',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY', 'FORT MCMURRAY'],
+                when: {edmonton: [new Date("Sep 7, 2015 19:30:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/peruchazhi.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 25,
+                name: 'Manam',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY'],
+                when: {edmonton: [new Date("May 20, 2015 15:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/Manam.jpg',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 26,
+                name: 'Goynar Baksho',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['CALGARY'],
+                when: {edmonton: [new Date("July 20, 2015 15:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/mov07.jpg',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 27,
+                name: 'Mach Mishti & More',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['CALGARY'],
+                when: {edmonton: [new Date("February 20, 2015 15:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/mov02.jpg',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 28,
+                name: 'Sapthamashree Thaskaraha',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Oct 11, 2015 15:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/sapthamashree.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 29,
+                name: 'Oggarane',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Oct 05, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/oggarane.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 30,
+                name: 'Bhaiya Bhaiya',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Sept 27, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/bhaiyabhaiya.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 31,
+                name: 'Jigarthanda',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("July 05, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/Jigarthanda.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 32,
+                name: 'VIP',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Oct 05, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/VIP.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 33,
+                name: 'Bangalore Days',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Oct 05, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/BD.jpg',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 34,
+                name: 'Anjaan',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'FORT MCMURRAY'],
+                when: {edmonton: [new Date("Aug 16, 2014 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/miruthan.jpg',
+                image: 'images/movie/Anjaan.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 35,
+                name: 'Yennai Arindhal..',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'FORT MCMURRAY'],
+                when: {edmonton: [new Date("Feb 08, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/yennai.png',
                 description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
             }
             

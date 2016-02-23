@@ -21,7 +21,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Venue : {{movie.venue}} </p>
-                        <p>Screening : {{movie.when[0] | date: ' EEEE - MMM d, y @ hh:mma'}}</p>
+                        <p>Screening : {{movie.when.edmonton[0] | date: ' EEEE - MMM d, y @ hh:mma'}}</p>
                     </div>
                 </div>
                 <div class="panel panel-info">
@@ -30,7 +30,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Venue - Metro Cinema</p>
-                        <p>Screening - 15th January 2016, 3:00pm</p>
+                        <p>Screening - {{movie.when.calgary[0] | date: ' EEEE - MMM d, y @ hh:mma'}}</p>
                     </div>
                 </div>
                 <button ng-hide="movie.status == 'old'" class="btn btn-success">Book Now</button>
