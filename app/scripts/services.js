@@ -10,7 +10,7 @@ angular.module('emcApp')
                 id: 1,
                 name: 'Wazir',
                 language: 'Hindi',
-                status: 'old',
+                status: 'year',
                 price: 12,
                 city: ['EDMONTON', 'FORT MCMURRAY'],
                 when: {edmonton: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")]},
@@ -39,7 +39,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 12,
                 city: ['EDMONTON'],
-                when: {edmonton: [new Date("January 15, 2016 15:00:00"), new Date("June 01, 2016 12:00:00")]},
+                when: {edmonton: [new Date("Nov 11, 2015 15:00:00")]},
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/vedhalam.jpg',
                 image: 'images/movie/vedhalam.png',
@@ -269,7 +269,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON', 'CALGARY'],
-                when: {edmonton: [new Date("Nov 02, 2015 13:00:00")]},
+                when: {edmonton: [new Date("Nov 02, 2014 13:00:00")]},
                 venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/apur_panchali.png',
@@ -282,7 +282,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON', 'CALGARY'],
-                when: {edmonton: [new Date("Nov 02, 2015 13:00:00")]},
+                when: {edmonton: [new Date("Nov 02, 2014 13:00:00")]},
                 venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/Chaar.png',
@@ -360,7 +360,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON'],
-                when: {edmonton: [new Date("Oct 11, 2015 15:00:00")]},
+                when: {edmonton: [new Date("Oct 11, 2014 15:00:00")]},
                 venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/sapthamashree.png',
@@ -373,7 +373,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON'],
-                when: {edmonton: [new Date("Oct 05, 2015 11:00:00")]},
+                when: {edmonton: [new Date("Oct 05, 2014 11:00:00")]},
                 venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/oggarane.png',
@@ -386,7 +386,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON'],
-                when: {edmonton: [new Date("Sept 27, 2015 11:00:00")]},
+                when: {edmonton: [new Date("Sept 27, 2014 11:00:00")]},
                 venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/bhaiyabhaiya.png',
@@ -412,7 +412,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON'],
-                when: {edmonton: [new Date("Oct 05, 2015 11:00:00")]},
+                when: {edmonton: [new Date("Oct 05, 2014 11:00:00")]},
                 venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/VIP.png',
@@ -425,7 +425,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON'],
-                when: {edmonton: [new Date("Oct 05, 2015 11:00:00")]},
+                when: {edmonton: [new Date("Oct 05, 2014 11:00:00")]},
                 venue: {edmonton: 'Landmark Cinemas 10'},
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/BD.jpg',
@@ -456,6 +456,227 @@ angular.module('emcApp')
                 bigimage: 'images/big/yennai.png',
                 image: 'images/movie/yennai.png',
                 description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 36,
+                name: 'Nannum Rowdy Thaan',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'FORT MCMURRAY'],
+                when: {edmonton: [new Date("Oct 25, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/nanumrowdy.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 37,
+                name: 'Amar Akbar Antony',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY'],
+                when: {edmonton: [new Date("Nov 08, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/amarakbar.jpg',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 38,
+                name: 'Pasanga 2',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Dec 24, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/pasanga2.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 49,
+                name: 'Gujubhai the great',
+                language: 'Marathi',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Dec 10, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/guju.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 40,
+                name: 'Thoongavanam',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Nov 15, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/thoongavanam.png',
+                description: 'Anegan (English: Multiple Single Person) is an upcoming Indian Tamil romantic thriller film directed by K. V. Anand. The film stars Dhanush, Amyra Dastur, Aishwarya Devan and Karthik, with Atul Kulkarni, Ashish Vidyarthi, Aishwarya Devan and Jagan in supporting roles. Produced by AGS Entertainment, the film\'s soundtrack album and background score composed by Harris Jayaraj. Cinematography was handled by Om Prakash and editing was done by Anthony. The film was listed by Behindwoods in its "Top 10 most Anticipated films of 2014"'
+            }
+            ,{
+                id: 41,
+                name: 'Ennunintemoideen',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'FORT MCMURRAY'],
+                when: {edmonton: [new Date("Oct 11, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/ennu.jpg',
+                description: ''
+            }
+            ,{
+                id: 42,
+                name: 'Puli',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY', 'FORT MCMURRAY'],
+                when: {edmonton: [new Date("Oct 01, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/puli.jpg',
+                description: ''
+            }
+            ,{
+                id: 43,
+                name: 'Kunjiramayanam',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Sep 26, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/kunjiramayanam.png',
+                description: ''
+            }
+            ,{
+                id: 44,
+                name: 'Vaalu',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Aug 15, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/vaalu.jpg',
+                description: ''
+            }
+            ,{
+                id: 45,
+                name: 'Rangi Taranga',
+                language: 'Kannada',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Aug 20, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/rangi.jpg',
+                description: ''
+            }
+            ,{
+                id: 46,
+                name: 'Loham',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Sep 05, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/loham.jpg',
+                description: ''
+            }
+            ,{
+                id: 47,
+                name: 'Thanioruvan',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Sep 07, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/thani.jpg',
+                description: ''
+            }
+            ,{
+                id: 48,
+                name: 'Love 24x7',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Aug 06, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/love24.jpg',
+                description: ''
+            }
+            ,{
+                id: 49,
+                name: 'Sreemanthadu',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY'],
+                when: {edmonton: [new Date("Aug 07, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/sreemanthudu.jpg',
+                description: ''
+            }
+            ,{
+                id: 50,
+                name: 'Premam',
+                language: 'Malayalam',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY'],
+                when: {edmonton: [new Date("Jun 08, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/premam.jpg',
+                description: ''
+            }
+            ,{
+                id: 51,
+                name: 'Baahubali',
+                language: 'Telugu',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON', 'CALGARY', 'FORT MCMURRAY'],
+                when: {edmonton: [new Date("Jul 09, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/bahu.jpg',
+                description: ''
+            }
+            ,{
+                id: 52,
+                name: 'Aambala',
+                language: 'Tamil',
+                status: 'old',
+                price: 15,
+                city: ['EDMONTON'],
+                when: {edmonton: [new Date("Jan 18, 2015 11:00:00")]},
+                venue: {edmonton: 'Landmark Cinemas 10'},
+                bigimage: 'images/big/yennai.png',
+                image: 'images/movie/aambala.jpg',
+                description: ''
             }
             
         ];
