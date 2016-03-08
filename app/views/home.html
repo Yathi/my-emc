@@ -97,7 +97,7 @@
             <div class="col-xs-1"></div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-xs-6 panel panel-default movie-panel" ng-repeat="m in movies | filter:filtText | orderBy: myFilter(m)">
+            <div class="col-sm-4 col-xs-6 panel panel-default movie-panel" ng-repeat="m in movies | filter:filtText | orderBy:myFilter:true">
                 <h3 align="center">{{m.name}}</h3>
                 <div class="movie-image-container">
                     <a ui-sref="app.moviedetails({id:m.id})" eat-click-if="m.status == 'old'">

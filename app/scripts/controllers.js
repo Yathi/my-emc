@@ -22,7 +22,7 @@ angular.module('emcApp')
                 image: 'images/portraits/1.jpg'
             },
             {
-                name: 'Loki',
+                name: 'Lokesh Bhaskararajan',
                 title: 'Vice-President',
                 image: 'images/portraits/2.jpg'
             },
@@ -47,7 +47,7 @@ angular.module('emcApp')
                 image: 'images/portraits/5.jpg'
             },
             {
-                name: 'Savithri Machiragu',
+                name: 'Savithri Manchiraju',
                 title: 'Public Relations',
                 image: 'images/portraits/6.jpg'
             },
@@ -114,6 +114,11 @@ angular.module('emcApp')
         
         $scope.isSelected = function(checkTab) {
             return ($scope.tab == checkTab);
+        };
+            
+        $scope.myFilter = function(movie) {
+            console.log(movie);
+            return movie.when.edmonton[0];
         };
     }])
     .controller('MovieDetailController', ['$scope', '$stateParams', 'movieFactory', function($scope, $stateParams, movieFactory) {

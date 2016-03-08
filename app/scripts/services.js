@@ -86,7 +86,7 @@ angular.module('emcApp')
                 language: 'Tamil',
                 status: 'old',
                 price: 12,
-                city: ['EDMONTON', 'CALGARY'],
+                city: ['EDMONTON', 'CALGARY', 'FORT MCMURRAY'],
                 when: {edmonton: [new Date("May 31, 2015 10:30:00")]},
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
@@ -230,7 +230,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON', 'FORT MCMURRAY'],
-                when: {edmonton: [new Date("Mar 15, 2015 18:15:00")]},
+                when: {edmonton: [new Date("Mar 05, 2015 18:15:00")]},
                 venue: 'Metro Cinema',
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/bey_yaar.png',
@@ -256,7 +256,7 @@ angular.module('emcApp')
                 status: 'old',
                 price: 15,
                 city: ['EDMONTON'],
-                when: {edmonton: [new Date("Feb 13, 2015 18:15:00")]},
+                when: {edmonton: [new Date("Feb 11, 2015 18:15:00")]},
                 venue: 'Landmark Cinemas 10',
                 bigimage: 'images/big/miruthan.jpg',
                 image: 'images/movie/anegan.png',
@@ -509,6 +509,12 @@ angular.module('emcApp')
             id:2,
             name: 'Diwali - Celebration of Lights',
             when: new Date("October 19, 2014 14:00:00"),
+            image: 'images/event/diwali2014.jpg'
+        },
+        {
+            id:3,
+            name: 'India Film Festival',
+            when: new Date("July 17, 2015 14:00:00"),
             image: 'images/event/diwali2014.jpg'
         }
     ];

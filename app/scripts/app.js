@@ -105,9 +105,11 @@ angular.module('emcApp', ['ui.router', 'ngResource', 'ngAnimate'])
           }
 ])
 
-    .filter('myFilter', function(movie) {
-        return movie.when[0];
-     })
+//    .filter('myFilter', function(movie) {
+//        console.log(movie.when.edmonton[0]);
+//        return movie.when.edmonton[0];
+//        
+//     })
 
 
 
